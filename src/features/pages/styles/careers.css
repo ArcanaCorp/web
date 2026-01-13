@@ -1,1 +1,21 @@
 .--careers-hero { height: calc(100dvh - 60px); }
+
+.--careers-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.--careers-overlay .--careers-modal {
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .--careers-overlay .--careers-modal {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .--careers-overlay .--careers-modal {
+        width: 40%;
+    }
+}

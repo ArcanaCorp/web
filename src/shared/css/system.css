@@ -2,6 +2,7 @@
    POSITION
    ===================================================== */
 
+.fixed { position: fixed; }
 .relative { position: relative; }
 .absolute { position: absolute; }
 .static { position: static; }
@@ -66,7 +67,12 @@
    ===================================================== */
 
 .scroll { overflow: scroll; }
+.scroll-y { overflow-y: scroll; }
 .overflow-hidden { overflow: hidden; }
+
+.scroll-y-hidden::-webkit-scrollbar {
+   display: none;
+}
 
 /* =====================================================
    SPACING — MARGIN
