@@ -111,3 +111,11 @@ export const techSkills = [
     "Communication",
     "Self-learning"
 ];
+
+export const categoriesProduct = {
+    'school': 'Aprendizaje',
+    'bussines': 'Negocios',
+    'culture': 'Cultura',
+    'art': 'Arte',
+    'ai': 'Inteligencia Artificial'
+}

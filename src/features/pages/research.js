@@ -1,10 +1,10 @@
 import ParticlesCanvas from "../../components/ParticlesCanvas";
 import SEO from "../../components/SEO";
 
-export default function CompanyPage () {
+export default function ResearchPage () {
 
-    const pageTitle = "Quiénes Somos – ARCANA CORP";
-    const pageDescription = "ARCANA CORP es una empresa tecnológica que desarrolla productos digitales y plataformas para simplificar procesos, mejorar experiencias y transformar negocios. Conoce nuestra visión y equipo.";
+    const pageTitle = "Investigación – ARCANA CORP";
+    const pageDescription = "Explora cómo ARCANA CORP investiga nuevas formas de conectar personas, aprender y trabajar mediante tecnologías innovadoras que transforman experiencias digitales.";
 
     const jsonLd = [
         {
@@ -31,7 +31,7 @@ export default function CompanyPage () {
             "@type": "WebPage",
             "name": pageTitle,
             "description": pageDescription,
-            "url": "https://arcanacorp.netlify.app/company",
+            "url": "https://arcanacorp.netlify.app/research",
             "inLanguage": "es-PE",
             "publisher": {
                 "@type": "Organization",
@@ -47,32 +47,30 @@ export default function CompanyPage () {
     return (
 
         <>
-
+        
             <SEO
                 title={pageTitle}
                 description={pageDescription}
-                url="https://arcanacorp.netlify.app/company"
+                url="https://arcanacorp.netlify.app/research"
                 image="https://arcanacorp.netlify.app/og-image.png"
                 jsonLd={jsonLd}
             />
-        
+
             <main className="w-full">
-
                 <section className="--company-hero relative overflow-hidden" style={{height: 'calc(100dvh - 60px)'}}>
-                    
+                                    
                     <ParticlesCanvas/>
-
+                
                     <div className="--company-hero-content relative h-full center m-auto" style={{width: '90%'}}>
                         <div className="flex flex-col gap-lg items-center">
                             <h1 className="text-center">
-                                <p className="text-3xl text-medium lg:text-5xl">Nuestra compañia</p>
-                                <p className="text-lg text-light text-gray-300 lg:text-2xl">Creamos productos digitales y plataformas que simplifican la vida de las personas, optimizan procesos y transforman negocios</p>
+                                <p className="text-3xl text-medium lg:text-5xl">Investigación e Innovación</p>
+                                <p className="text-lg text-light text-gray-300 lg:text-2xl">Descubre cómo ARCANA CORP explora tecnologías innovadoras para mejorar la forma de conectar, aprender y trabajar en el mundo digital</p>
                             </h1>
                         </div>
                     </div>
-
+                
                 </section>
-
             </main>
 
         </>

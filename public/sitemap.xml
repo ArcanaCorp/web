@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Generar todas las URLs -->
+    <url>
+        <loc>https://arcanacorp.netlify.app/products</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/products/plataformas</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/products/ecosistemas</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/products/tecnologias</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/platform</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/teams</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/teams/arquitectura</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/teams/stack</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/teams/apis</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/teams/documentacion</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/research</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/ecosystem</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/company</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/company/arcana</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/company/vision</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/company/operacion</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/careers</loc>
+    </url>
+
+    <url>
+        <loc>https://arcanacorp.netlify.app/legal/privacy</loc>
+    </url>
+    <url>
+        <loc>https://arcanacorp.netlify.app/legal/terms</loc>
+    </url>
+</urlset>

@@ -5,6 +5,13 @@ import NotFound from "../features/pages/notfound";
 import CareersPage from "../features/pages/careers";
 import DevsPage from "../features/pages/devs";
 import CompanyPage from "../features/pages/company";
+import ProductsPage from "../features/pages/products";
+import EcosystemPage from "../features/pages/ecosystem";
+import PlatformPage from "../features/pages/platform";
+import ResearchPage from "../features/pages/research";
+import LegalPage from "../features/pages/legal";
+import PrivacyPage from "../features/pages/privacy";
+import TermsPage from "../features/pages/terms";
 
 export const router = createBrowserRouter([
     {
@@ -17,12 +24,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/products',
-                element: <NotFound/>,
+                element: <ProductsPage/>,
                 errorElement: <NotFound/>
             },
             {
                 path: '/platform',
-                element: <NotFound/>,
+                element: <PlatformPage/>,
                 errorElement: <NotFound/>
             },
             {
@@ -32,12 +39,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/research',
-                element: <NotFound/>,
+                element: <ResearchPage/>,
                 errorElement: <NotFound/>
             },
             {
                 path: '/ecosystem',
-                element: <NotFound/>,
+                element: <EcosystemPage/>,
                 errorElement: <NotFound/>
             },
             {
@@ -57,13 +64,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/legal',
-                element: <NotFound/>,
+                element: <LegalPage/>,
                 children: [
                     {
-                        path: '/legal/privacy'
+                        path: '/legal/privacy',
+                        element: <PrivacyPage/>,
                     },
                     {
-                        path: '/legal/terms'
+                        path: '/legal/terms',
+                        element: <TermsPage/>,
                     }
                 ],
                 errorElement: <NotFound/>

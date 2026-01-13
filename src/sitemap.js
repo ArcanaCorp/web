@@ -49,10 +49,6 @@ export const siteMap = [
         position: 'header',
     },
     {
-        name: "Contacto",
-        path: "/contact"
-    },
-    {
         name: "Legal",
         path: "/legal",
         children: [

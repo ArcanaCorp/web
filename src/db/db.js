@@ -50,3 +50,12 @@ export async function getCareers() {
     if (error) throw error;
     return data;
 }
+
+export async function getProducts() {
+    const { data, error } = await supabase
+        .from('products')
+        .select('*')
+        .order('id', { ascending: true });
+    if (error) throw error;
+    return data;
+}

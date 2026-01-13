@@ -37,7 +37,8 @@ export default function Footer () {
                         <p className='text-md mb-lg text-medium'>Compañía</p>
                         <ul className="flex flex-col gap-md">
                             <li><Link to="/company" className='text-sm'>Compañia</Link></li>
-                            <li><Link to="/devs" className='text-sm'>Desarrolladores</Link></li>
+                            <li><Link to="/teams" className='text-sm'>Desarrolladores</Link></li>
+                            <li><Link to="/legal" className='text-sm'>Legal</Link></li>
                             <li><Link to="/legal/privacy" className='text-sm'>Privacidad</Link></li>
                             <li><Link to="/legal/terms" className='text-sm'>Términos</Link></li>
                         </ul>
