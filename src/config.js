@@ -1,0 +1,3 @@
+export const REACT_APP_API = process.env.REACT_APP_SUPABASE_URL
+export const REACT_APP_API_KEY = process.env.REACT_APP_SUPABASE_API_KEY
+export const REACT_APP_API_SECRET = process.env.REACT_APP_SUBABASE_AUTH_KEY

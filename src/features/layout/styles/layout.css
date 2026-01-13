@@ -1,0 +1,36 @@
+.--header {
+    height: 60px;
+}
+
+.--header .--header-box {
+    width: 90%;
+}
+
+.--header .--header-nav {
+    left: -100dvw;
+    z-index: 2;
+    height: calc(100dvh - 60px);
+    transition: .4s ease all;
+}
+
+.--header .--header-nav-active {
+    left: 0;
+    transition: .4s ease all;
+}
+
+.--header .--header-nav .--header-nav-items {
+    width: 90%;
+}
+
+
+.--footer .--footer-box {
+    width: 90%;
+}
+
+.--footer .--footer-box .--footer-row {
+    gap: 42px;
+}
+
+.--footer .--footer-box .--footer-row .--footer-row-col {
+    flex: 1 1 auto;
+}

@@ -1,0 +1,161 @@
+:root {
+    /* Font */
+    --font-family: "Google Sans", sans-serif;
+
+    /* =========================
+        COLORS — BLACK FIRST
+        ========================= */
+    --black: #000000;
+    --white: #ffffff;
+
+    --gray-900: #0d0d0d;
+    --gray-800: #1a1a1a;
+    --gray-700: #2a2a2a;
+    --gray-600: #444444;
+    --gray-500: #666666;
+    --gray-400: #8a8a8a;
+    --gray-300: #b0b0b0;
+    --gray-200: #d1d1d1;
+
+    /* Background */
+    --bg-page: var(--black);
+    --bg-surface: var(--gray-900);
+    --bg-surface-muted: var(--gray-800);
+
+    /* Text */
+    --text-primary: var(--white);
+    --text-secondary: var(--gray-300);
+    --text-muted: var(--gray-400);
+    --text-disabled: var(--gray-500);
+
+    /* Borders */
+    --border-color-default: var(--gray-700);
+    --border-color-strong: var(--gray-500);
+
+    /* =========================
+        TYPOGRAPHY SCALE (MOBILE)
+        ========================= */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+    --text-2xl: 32px;
+    --text-3xl: 40px;
+    --text-4xl: 48px;
+    --text-5xl: 56px;
+
+    --line-tight: 1.2;
+    --line-normal: 1.5;
+    --line-loose: 1.7;
+
+    /* =========================
+        SPACING (4px GRID)
+        ========================= */
+    --size-xs: 8px;
+    --size-sm: 12px;
+    --size-md: 16px;
+    --size-lg: 24px;
+    --size-xl: 32px;
+    --size-2xl: 48px;
+
+    /* =========================
+        RADIUS
+        ========================= */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+
+    /* =========================
+        SHADOWS
+        ========================= */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,.4);
+    --shadow-md: 0 6px 12px rgba(0,0,0,.5);
+
+    /* =========================
+        STATES
+        ========================= */
+    --state-hover: rgba(255,255,255,0.08);
+    --state-active: rgba(255,255,255,0.16);
+    --state-focus: rgba(255,255,255,0.24);
+}
+
+/* =========================
+   TABLET ≥ 768px
+   ========================= */
+@media (min-width: 768px) {
+    :root {
+        --text-md: 18px;
+        --text-lg: 22px;
+        --text-xl: 28px;
+        --text-2xl: 36px;
+        --text-3xl: 44px;
+    }
+}
+
+/* =========================
+   DESKTOP ≥ 1024px
+   ========================= */
+@media (min-width: 1024px) {
+    :root {
+        --text-md: 20px;
+        --text-lg: 24px;
+        --text-xl: 32px;
+        --text-2xl: 40px;
+        --text-3xl: 52px;
+        --text-4xl: 60px;
+        --text-5xl: 72px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100dvw;
+    font-weight: 200;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--text-primary);
+    background-color: var(--bg-page);
+}
+
+input, select, textarea {
+    font-family: var(--font-family);
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg path {
+    stroke-width: 1.2;
+    stroke: var(--white);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}

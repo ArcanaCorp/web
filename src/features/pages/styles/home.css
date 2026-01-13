@@ -1,0 +1,12 @@
+.--home-hero {
+    height: calc(100dvh - 60px);
+}
+
+.--home-hero .--hero-canvas {
+    z-index: 0;
+}
+
+.--home-hero .--home-hero-content {
+    width: 90%;
+    z-index: 1;
+}
