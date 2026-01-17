@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { institutions, techCareers, techSkills } from "../helpers/texts"
 import { supabase } from "../libs/supabase";
+import { toast } from "sonner";
 
 export default function ModalApply ({ job }) {
 
@@ -37,7 +38,7 @@ export default function ModalApply ({ job }) {
 
         // Validar tipo MIME
         if (file.type !== 'application/pdf') {
-            alert('Solo se permite subir archivos PDF');
+            toast('Alerta', {description: 'Solo se permite subir archivos PDF'});
             e.target.value = null;
             return;
         }
@@ -45,7 +46,7 @@ export default function ModalApply ({ job }) {
         // (Opcional) Validar tamaño — recomendado
         const maxSizeMB = 5;
         if (file.size > maxSizeMB * 1024 * 1024) {
-            alert('El archivo no debe superar los 5MB');
+            toast('Alerta', { description: 'El archivo no debe superar los 5MB' })
             e.target.value = null;
             return;
         }
@@ -60,7 +61,7 @@ export default function ModalApply ({ job }) {
         try {
             // 1️⃣ Validaciones básicas
             if (!form.fullname || !form.email || !form.career || !form.institution || !form.file) {
-                alert('Por favor completa todos los campos obligatorios y carga tu CV.');
+                toast('Alerta', { description: 'Por favor completa todos los campos obligatorios y carga tu CV.' })
                 return;
             }
 
@@ -68,7 +69,7 @@ export default function ModalApply ({ job }) {
 
             // 2️⃣ Subir CV a Supabase Storage
             const fileExt = form.file.name.split('.').pop();
-            const fileName = `${form.fullname.replaceAll(' ', '_')}_${Date.now()}.${fileExt}`;
+            const fileName = `${crypto.randomUUID()}.${fileExt}`;
             const filePath = `${job.slug}/${fileName}`;
 
             const { error: uploadError } = await supabase.storage
@@ -102,7 +103,7 @@ export default function ModalApply ({ job }) {
 
             if (insertError) throw insertError;
 
-            alert('Tu postulación se ha enviado correctamente 🚀');
+            toast('Éxito', {description: 'Tu postulación se ha enviado correctamente 🚀'});
             
             // 5️⃣ Limpiar formulario
             setForm({
@@ -119,7 +120,7 @@ export default function ModalApply ({ job }) {
 
         } catch (err) {
             console.error(err);
-            alert('Ocurrió un error al enviar tu postulación: ' + err.message);
+            toast('Error', {  description: `Ocurrió un error al enviar tu postulación: ${err.message}` })
         } finally {
             setLoading(false)
         }
